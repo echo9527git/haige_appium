@@ -13,10 +13,6 @@ from utils.my_utils import highlight_element_appium
 
 class MainPage(BasePage):
     '''
-
-
-
-
     活动精选大促-更多
     活动3个小入口
     高级代理人入口

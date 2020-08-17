@@ -1,0 +1,8 @@
+# xuqiu-appium
+caps:
+  platformName: android
+  deviceName: 127.0.0.1:21503
+  appPackage: com.xueqiu.android
+  appActivity: .common.MainActivity
+  autoGrantPermissions: true
+  noReset: true

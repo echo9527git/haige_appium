@@ -24,9 +24,9 @@ class BasePage:
             return self.driver.find_element(*locator) #可能会出现异常，如果不出现就直接return
         except:# 如果出现异常就对处理，思路是循环去黑名单中找一些异常弹框：广告、好评、升级、tips等
             handle_element_exception(self.driver,self.black_list)
-            # todo：可能找了两次之后还是没有找到，那么可能需要调用本身进行递归处理
+            # 可能找了两次之后还是没有找到，那么可能需要调用本身进行递归处理
             # * 的作用其实就是把序列 locator 中的每个元素，当作位置参数传进去
-            return self.driver.find_element(*locator)
+            return self.find_element(*locator)
 
     def find_elements(self,locator):
         return self.driver.find_elements(*locator)

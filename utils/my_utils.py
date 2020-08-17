@@ -23,6 +23,7 @@ def handle_element_exception(driver,black_list):
         if len(elements) >= 1:  # 说明找到了元素
             elements[0].click()  # 找到了点击即可--点击的是黑名单里面的弹框
             print("%s 弹框出现" % str(locator))
+            break
         else:  # 如果没有找到，打印日志即可
             print("%s not found" % str(locator))
 
